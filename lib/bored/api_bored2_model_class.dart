@@ -1,4 +1,4 @@
-class bored1 {
+class bored22 {
   String? activity;
   String? type;
   int? participants;
@@ -7,7 +7,7 @@ class bored1 {
   String? key;
   double? accessibility;
 
-  bored1(
+  bored22(
       {this.activity,
         this.type,
         this.participants,
@@ -16,7 +16,7 @@ class bored1 {
         this.key,
         this.accessibility});
 
-  bored1.fromJson(Map<String, dynamic> json) {
+  bored22.fromJson(Map<String, dynamic> json) {
     activity = json['activity'];
     type = json['type'];
     participants = json['participants'];

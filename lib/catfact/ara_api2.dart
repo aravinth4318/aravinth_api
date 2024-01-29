@@ -35,32 +35,35 @@ class _api_catfact2State extends State<api_catfact2> {
       ),
 
 
-      body: Column(
-        children: [
-          FutureBuilder(
-              future: catfact2Details(),
-              builder: (context, snapshot) {
-                if(snapshot.hasData) {
-                  return Column(
-                    children: [
-                      Text(snapshot.data!.fact.toString()),
-                      Text(snapshot.data!.length.toString())
-                    ],
-                  );
-                }
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            FutureBuilder(
+                future: catfact2Details(),
+                builder: (context, snapshot) {
+                  if(snapshot.hasData) {
+                    return Column(
+                      children: [
+                        Text(snapshot.data!.fact.toString()),
+                        Text(snapshot.data!.length.toString())
+                      ],
+                    );
+                  }
 
-                ///show the any sever error 1st one for error function
+                  ///show the any sever error 1st one for error function
 
-                else if (snapshot.hasError){
-                  return Text('${snapshot.error}');
-                }
+                  else if (snapshot.hasError){
+                    return Text('${snapshot.error}');
+                  }
 
-                /// By default, show a loading spinner.
+                  /// By default, show a loading spinner.
 
-                return CircularProgressIndicator();
-          }
-          )
-        ],
+                  return CircularProgressIndicator();
+            }
+            )
+          ],
+        ),
       ),
     );
   }
