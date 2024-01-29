@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'ara_api1.dart';
-import 'ara_api2.dart';
+import 'bored/api_bored1.dart';
+import 'catfact/ara_api1.dart';
+import 'catfact/ara_api2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: api_catfact2 (),
+      home: api_bored1 (),
     );
   }
 }

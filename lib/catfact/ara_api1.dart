@@ -2,8 +2,9 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 
-import 'ara_model_class/api_catfact.dart';
 import 'package:http/http.dart' as http;
+
+import 'api_catfact1_model_class.dart';
 
 class ap_catfact extends StatefulWidget {
   const ap_catfact({super.key});
@@ -47,11 +48,15 @@ class _ap_catfactState extends State<ap_catfact> {
                   Text(snapshot.data!.length.toString())
                 ],
               );
+
+              ///show the any sever error 1st one for error function
+
             } else if (snapshot.hasError) {
               return Text('${snapshot.error}');
             }
 
             /// By default, show a loading spinner.
+
 
             return const CircularProgressIndicator();
           },

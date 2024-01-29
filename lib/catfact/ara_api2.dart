@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart'as http;
 
-import 'ara_model_class/api_catfact2.dart';
+import 'api_catfact2_model_class.dart';
 
 
 class api_catfact2 extends StatefulWidget {
@@ -48,6 +48,9 @@ class _api_catfact2State extends State<api_catfact2> {
                     ],
                   );
                 }
+
+                ///show the any sever error 1st one for error function
+
                 else if (snapshot.hasError){
                   return Text('${snapshot.error}');
                 }
