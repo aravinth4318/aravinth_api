@@ -27,6 +27,13 @@ class _bored2State extends State<bored2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Center(
+          child: Text("Api For Bored",
+            style: TextStyle(fontSize: 25),
+          ),
+        ),
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,

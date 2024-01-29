@@ -6,22 +6,21 @@ import 'catfact/ara_api1.dart';
 import 'catfact/ara_api2.dart';
 
 
-class calcbottomnavi extends StatefulWidget {
-  const calcbottomnavi({super.key});
+class api_bottomnavi extends StatefulWidget {
+  const api_bottomnavi({super.key});
 
   @override
-  State<calcbottomnavi> createState() => _calcbottomnaviState();
+  State<api_bottomnavi> createState() => _api_bottomnaviState();
 }
 
-class _calcbottomnaviState extends State<calcbottomnavi> {
+class _api_bottomnaviState extends State<api_bottomnavi> {
 
   int _currentIndex = 0;
 
   final tabs = [
     ap_catfact(),
-    api_catfact2(),
     api_bored1(),
-    bored2(),
+
 
 
   ];
@@ -50,17 +49,6 @@ class _calcbottomnaviState extends State<calcbottomnavi> {
             ),
 
 
-            ///catfact 2
-
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.maximize,
-                color: Colors.black,
-                size: 25,),
-              label: "catfact 2",
-              backgroundColor: Colors.green,
-            ),
-
             ///bored 1
 
             BottomNavigationBarItem(
@@ -72,17 +60,6 @@ class _calcbottomnaviState extends State<calcbottomnavi> {
               backgroundColor: Colors.blueGrey,
             ),
 
-
-            ///bored 2
-
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.monetization_on_rounded,
-                color: Colors.black,
-                size: 25,),
-              label: "bored 2",
-              backgroundColor: Colors.purpleAccent,
-            ),
 
           ],
           onTap: (index) {

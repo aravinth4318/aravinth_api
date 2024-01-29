@@ -28,8 +28,10 @@ class _api_bored1State extends State<api_bored1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Api For Bored",
-        style: TextStyle(fontSize: 25),
+        title: Center(
+          child: Text("Api For Bored",
+          style: TextStyle(fontSize: 25),
+          ),
         ),
       ),
       body: Center(

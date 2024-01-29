@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'bored/api_bored1.dart';
 import 'bored/api_bored2.dart';
+import 'bottomnavigation.dart';
 import 'catfact/ara_api1.dart';
 import 'catfact/ara_api2.dart';
 
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: bored2 (),
+      home: api_bottomnavi (),
     );
   }
 }

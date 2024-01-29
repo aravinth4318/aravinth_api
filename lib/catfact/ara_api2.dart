@@ -28,7 +28,7 @@ class _api_catfact2State extends State<api_catfact2> {
     return Scaffold(
       appBar: AppBar(
         title: Center(
-          child: Text("Api Cat Fact 2 Model",
+          child: Text("Api Cat Fact",
           style: TextStyle(fontSize: 25),
           ),
         ),
