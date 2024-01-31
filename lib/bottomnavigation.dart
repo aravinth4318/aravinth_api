@@ -1,3 +1,4 @@
+import 'package:aravinth_api/public/public_1.dart';
 import 'package:flutter/material.dart';
 
 import 'bored/api_bored1.dart';
@@ -20,6 +21,7 @@ class _api_bottomnaviState extends State<api_bottomnavi> {
   final tabs = [
     ap_catfact(),
     api_bored1(),
+    public(),
 
 
 
@@ -39,27 +41,41 @@ class _api_bottomnaviState extends State<api_bottomnavi> {
 
             ///catfact 1
 
+
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.calculate,
                 color: Colors.black,
                 size: 25,),
-              label: "catfact 1",
+              label: "catfact ",
               backgroundColor: Colors.teal,
             ),
 
 
             ///bored 1
 
+
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.money,
                 color: Colors.black,
                 size: 25,),
-              label: "bored 1",
+              label: "bored ",
               backgroundColor: Colors.blueGrey,
             ),
 
+
+            ///public 1
+
+
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.list,
+                color: Colors.black,
+                size: 25,),
+              label: "public ",
+              backgroundColor: Colors.blueGrey,
+            ),
 
           ],
           onTap: (index) {

@@ -44,11 +44,16 @@ class _ap_catfactState extends State<ap_catfact> {
             future: cat_factDetails(),
             builder: (context, snapshot) {
               if (snapshot.hasData) {
-                return Column(
-                  children: [
-                    Text(snapshot.data!.fact.toString()),
-                    Text(snapshot.data!.length.toString())
-                  ],
+                return Center(
+                  child: Column(
+                    children: [
+                      Text(snapshot.data!.fact.toString(),
+                      style: TextStyle(fontSize: 20),),
+                      SizedBox(height: 100,),
+                      Text(snapshot.data!.length.toString(),
+                      style: TextStyle(fontSize: 20),)
+                    ],
+                  ),
                 );
 
                 ///show the any sever error 1st one for error function

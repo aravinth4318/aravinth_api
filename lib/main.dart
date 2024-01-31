@@ -1,3 +1,5 @@
+import 'package:aravinth_api/public/public_1.dart';
+import 'package:aravinth_api/public/public_2.dart';
 import 'package:flutter/material.dart';
 
 import 'bored/api_bored1.dart';
@@ -38,7 +40,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: api_bottomnavi (),
+      home: public2 (),
     );
   }
 }

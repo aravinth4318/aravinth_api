@@ -42,16 +42,31 @@ class _api_bored1State extends State<api_bored1> {
                 future: bored1Details(),
                 builder: (context, snapsort) {
                   if (snapsort.hasData){
-                    return Column(
-                      children: [
-                        Text(snapsort.data!.activity.toString()),
-                        Text(snapsort.data!.accessibility.toString()),
-                        Text(snapsort.data!.type.toString()),
-                        Text(snapsort.data!.participants.toString()),
-                        Text(snapsort.data!.price.toString()),
-                        Text(snapsort.data!.link.toString()),
-                        Text(snapsort.data!.key.toString()),
-                      ],
+                    return Center(
+                      child: Column(
+                        children: [
+                          Text(snapsort.data!.activity.toString(),
+                          style: TextStyle(fontSize: 20),),
+                          SizedBox(height: 20,),
+                          Text(snapsort.data!.accessibility.toString(),
+                          style: TextStyle(fontSize: 20),),
+                          SizedBox(height: 20,),
+                          Text(snapsort.data!.type.toString(),
+                            style: TextStyle(fontSize: 20),),
+                          SizedBox(height: 20,),
+                          Text(snapsort.data!.participants.toString(),
+                            style: TextStyle(fontSize: 20),),
+                          SizedBox(height: 20,),
+                          Text(snapsort.data!.price.toString(),
+                            style: TextStyle(fontSize: 20),),
+                          SizedBox(height: 20,),
+                          Text(snapsort.data!.link.toString(),
+                            style: TextStyle(fontSize: 20),),
+                          SizedBox(height: 20,),
+                          Text(snapsort.data!.key.toString(),
+                            style: TextStyle(fontSize: 20),),
+                        ],
+                      ),
                     );
                   }
 
