@@ -5,6 +5,7 @@ import 'bored/api_bored1.dart';
 import 'bored/api_bored2.dart';
 import 'catfact/ara_api1.dart';
 import 'catfact/ara_api2.dart';
+import 'gtsuvai/item_3.dart';
 import 'gtsuvai/offer_1_.dart';
 import 'gtsuvai/resut_2.dart';
 
@@ -23,6 +24,7 @@ class _api_bottomnaviState extends State<api_bottomnavi> {
   final tabs = [
     offerlink(),
     resut(),
+    iteam(),
 
 
 
@@ -41,7 +43,7 @@ class _api_bottomnaviState extends State<api_bottomnavi> {
           // unselectedFontSize: 50,
           items: [
 
-            ///link 1
+            ///offer
 
 
             BottomNavigationBarItem(
@@ -49,12 +51,12 @@ class _api_bottomnaviState extends State<api_bottomnavi> {
                 Icons.calculate,
                 color: Colors.black,
                 size: 25,),
-              label: "link 1",
+              label: "offer",
               backgroundColor: Colors.teal,
             ),
 
 
-            ///link 2
+            ///resut
 
 
             BottomNavigationBarItem(
@@ -62,12 +64,12 @@ class _api_bottomnaviState extends State<api_bottomnavi> {
                 Icons.money,
                 color: Colors.black,
                 size: 25,),
-              label: "link 2",
+              label: "resut",
               backgroundColor: Colors.blueGrey,
             ),
 
 
-            ///link 3
+            ///item
 
 
             BottomNavigationBarItem(
@@ -75,7 +77,7 @@ class _api_bottomnaviState extends State<api_bottomnavi> {
                 Icons.list,
                 color: Colors.black,
                 size: 25,),
-              label: "link 3",
+              label: "item",
               backgroundColor: Colors.blueGrey,
             ),
 

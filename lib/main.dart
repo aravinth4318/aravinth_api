@@ -7,6 +7,7 @@ import 'bored/api_bored2.dart';
 import 'bottomnavigation.dart';
 import 'catfact/ara_api1.dart';
 import 'catfact/ara_api2.dart';
+import 'gtsuvai/item_3.dart';
 import 'gtsuvai/offer_1_.dart';
 import 'gtsuvai/resut_2.dart';
 import 'nationalize/natio_1.dart';
@@ -43,7 +44,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: resut (),
+      home: iteam (),
     );
   }
 }
