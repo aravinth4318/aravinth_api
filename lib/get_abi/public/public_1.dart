@@ -1,6 +1,7 @@
 import 'dart:convert';
 
-import 'package:aravinth_api/public/public_model_class.dart';
+import 'package:aravinth_api/get_abi/public/public_2_model.dart';
+import 'package:aravinth_api/get_abi/public/public_model_class.dart';
 import 'package:flutter/material.dart';
 import 'package:matcher/matcher.dart';
 
@@ -18,12 +19,19 @@ class _publicState extends State<public> {
   ///this is bored detail for uri
 
 
-  Future<public1>? _future;
-Future <List<Entries>>   fetchdetails() async {
-  var result = await http.get(Uri.parse("https://api.publicapis.org/entries"));
-  var data = jsonDecode(result.body) ["entries"];
-  return (data as List).map((obj) => Entries.fromJson(obj)).toList();
-}
+  Future <pub>? _future;
+  Future <List<Entries>> details() async {
+    var res = await http.get(Uri.parse("https://api.publicapis.org/entries"));
+    var data = jsonDecode(res.body)["entries"];
+
+  }
+
+//   Future<pub>? _future;
+//   Future <List<Entries>>   fetchdetails() async {
+//   var result = await http.get(Uri.parse("https://api.publicapis.org/entries"));
+//   var data = jsonDecode(result.body) ["entries"];
+//   return (data as List).map((obj) => Entries.fromJson(obj)).toList();
+// }
 
 
   @override

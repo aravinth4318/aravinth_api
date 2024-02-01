@@ -1,31 +1,25 @@
-import 'package:aravinth_api/public/public_1.dart';
+import 'package:aravinth_api/get_abi/public/public_1.dart';
 import 'package:flutter/material.dart';
 
 import 'bored/api_bored1.dart';
-import 'bored/api_bored2.dart';
 import 'catfact/ara_api1.dart';
-import 'catfact/ara_api2.dart';
-import 'gtsuvai/item_3.dart';
-import 'gtsuvai/offer_1_.dart';
-import 'gtsuvai/resut_2.dart';
 
 
-class gtsuvai_bottom extends StatefulWidget {
-  const gtsuvai_bottom({super.key});
+class api_bottomnavi extends StatefulWidget {
+  const api_bottomnavi({super.key});
 
   @override
-  State<gtsuvai_bottom> createState() => _gtsuvai_bottomState();
+  State<api_bottomnavi> createState() => _api_bottomnaviState();
 }
 
-class _gtsuvai_bottomState extends State<gtsuvai_bottom> {
+class _api_bottomnaviState extends State<api_bottomnavi> {
 
   int _currentIndex = 0;
 
   final tabs = [
-    offerlink(),
-    resut(),
-    iteam(),
-
+    ap_catfact(),
+    api_bored1(),
+    public(),
 
 
 
@@ -43,7 +37,7 @@ class _gtsuvai_bottomState extends State<gtsuvai_bottom> {
           // unselectedFontSize: 50,
           items: [
 
-            ///offer
+            ///catfact 1
 
 
             BottomNavigationBarItem(
@@ -51,12 +45,12 @@ class _gtsuvai_bottomState extends State<gtsuvai_bottom> {
                 Icons.calculate,
                 color: Colors.black,
                 size: 25,),
-              label: "offer",
+              label: "catfact ",
               backgroundColor: Colors.teal,
             ),
 
 
-            ///resut
+            ///bored 1
 
 
             BottomNavigationBarItem(
@@ -64,12 +58,12 @@ class _gtsuvai_bottomState extends State<gtsuvai_bottom> {
                 Icons.money,
                 color: Colors.black,
                 size: 25,),
-              label: "resut",
+              label: "bored ",
               backgroundColor: Colors.blueGrey,
             ),
 
 
-            ///item
+            ///public 1
 
 
             BottomNavigationBarItem(
@@ -77,7 +71,7 @@ class _gtsuvai_bottomState extends State<gtsuvai_bottom> {
                 Icons.list,
                 color: Colors.black,
                 size: 25,),
-              label: "item",
+              label: "public ",
               backgroundColor: Colors.blueGrey,
             ),
 

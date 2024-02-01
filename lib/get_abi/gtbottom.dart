@@ -1,27 +1,26 @@
-import 'package:aravinth_api/public/public_1.dart';
 import 'package:flutter/material.dart';
 
-import 'bored/api_bored1.dart';
-import 'bored/api_bored2.dart';
-import 'catfact/ara_api1.dart';
-import 'catfact/ara_api2.dart';
+import 'gtsuvai/item_3.dart';
+import 'gtsuvai/offer_1_.dart';
+import 'gtsuvai/resut_2.dart';
 
 
-class api_bottomnavi extends StatefulWidget {
-  const api_bottomnavi({super.key});
+class gtsuvai_bottom extends StatefulWidget {
+  const gtsuvai_bottom({super.key});
 
   @override
-  State<api_bottomnavi> createState() => _api_bottomnaviState();
+  State<gtsuvai_bottom> createState() => _gtsuvai_bottomState();
 }
 
-class _api_bottomnaviState extends State<api_bottomnavi> {
+class _gtsuvai_bottomState extends State<gtsuvai_bottom> {
 
   int _currentIndex = 0;
 
   final tabs = [
-    ap_catfact(),
-    api_bored1(),
-    public(),
+    offerlink(),
+    resut(),
+    iteam(),
+
 
 
 
@@ -39,7 +38,7 @@ class _api_bottomnaviState extends State<api_bottomnavi> {
           // unselectedFontSize: 50,
           items: [
 
-            ///catfact 1
+            ///offer
 
 
             BottomNavigationBarItem(
@@ -47,12 +46,12 @@ class _api_bottomnaviState extends State<api_bottomnavi> {
                 Icons.calculate,
                 color: Colors.black,
                 size: 25,),
-              label: "catfact ",
+              label: "offer",
               backgroundColor: Colors.teal,
             ),
 
 
-            ///bored 1
+            ///resut
 
 
             BottomNavigationBarItem(
@@ -60,12 +59,12 @@ class _api_bottomnaviState extends State<api_bottomnavi> {
                 Icons.money,
                 color: Colors.black,
                 size: 25,),
-              label: "bored ",
+              label: "resut",
               backgroundColor: Colors.blueGrey,
             ),
 
 
-            ///public 1
+            ///item
 
 
             BottomNavigationBarItem(
@@ -73,7 +72,7 @@ class _api_bottomnaviState extends State<api_bottomnavi> {
                 Icons.list,
                 color: Colors.black,
                 size: 25,),
-              label: "public ",
+              label: "item",
               backgroundColor: Colors.blueGrey,
             ),
 

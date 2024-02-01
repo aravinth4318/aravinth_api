@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:aravinth_api/public/public_2_model.dart';
+import 'package:aravinth_api/get_abi/public/public_2_model.dart';
 import 'package:flutter/material.dart';
 import 'package:matcher/matcher.dart';
 

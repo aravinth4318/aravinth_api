@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:aravinth_api/gtsuvai/resut_2_model.dart';
+import 'package:aravinth_api/get_abi/gtsuvai/resut_2_model.dart';
 import 'package:flutter/material.dart';
 import 'package:matcher/matcher.dart';
 

@@ -1,10 +1,10 @@
-class public1 {
+class pub {
   int? count;
   List<Entries>? entries;
 
-  public1({this.count, this.entries});
+  pub({this.count, this.entries});
 
-  public1.fromJson(Map<String, dynamic> json) {
+  pub.fromJson(Map<String, dynamic> json) {
     count = json['count'];
     if (json['entries'] != null) {
       entries = <Entries>[];

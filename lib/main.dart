@@ -1,17 +1,17 @@
-import 'package:aravinth_api/public/public_1.dart';
-import 'package:aravinth_api/public/public_2.dart';
 import 'package:flutter/material.dart';
 
-import 'bored/api_bored1.dart';
-import 'bored/api_bored2.dart';
-import 'bottomnavigation.dart';
-import 'catfact/ara_api1.dart';
-import 'catfact/ara_api2.dart';
-import 'gtbottom.dart';
-import 'gtsuvai/item_3.dart';
-import 'gtsuvai/offer_1_.dart';
-import 'gtsuvai/resut_2.dart';
-import 'nationalize/natio_1.dart';
+import 'get_abi/bored/api_bored1.dart';
+import 'get_abi/bored/api_bored2.dart';
+import 'get_abi/bottomnavigation.dart';
+import 'get_abi/catfact/ara_api1.dart';
+import 'get_abi/catfact/ara_api2.dart';
+import 'get_abi/gtbottom.dart';
+import 'get_abi/gtsuvai/item_3.dart';
+import 'get_abi/gtsuvai/offer_1_.dart';
+import 'get_abi/gtsuvai/resut_2.dart';
+import 'get_abi/nationalize/natio_1.dart';
+import 'get_abi/public/public_1.dart';
+import 'get_abi/public/public_2.dart';
 
 void main() {
   runApp(const MyApp());
