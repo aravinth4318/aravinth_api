@@ -36,9 +36,10 @@ class _offerlinkState extends State<offerlink> {
     final height = MediaQuery.of(context).size.height;
 
     return Scaffold(
+      backgroundColor: Colors.blueGrey,
       appBar: AppBar(
         title: Center(
-          child: Text("Api For Gtsuvai",
+          child: Text("Api For Offer",
             style: TextStyle(fontSize: 25),),
         ),
       ),

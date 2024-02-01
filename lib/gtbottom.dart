@@ -10,14 +10,14 @@ import 'gtsuvai/offer_1_.dart';
 import 'gtsuvai/resut_2.dart';
 
 
-class api_bottomnavi extends StatefulWidget {
-  const api_bottomnavi({super.key});
+class gtsuvai_bottom extends StatefulWidget {
+  const gtsuvai_bottom({super.key});
 
   @override
-  State<api_bottomnavi> createState() => _api_bottomnaviState();
+  State<gtsuvai_bottom> createState() => _gtsuvai_bottomState();
 }
 
-class _api_bottomnaviState extends State<api_bottomnavi> {
+class _gtsuvai_bottomState extends State<gtsuvai_bottom> {
 
   int _currentIndex = 0;
 
