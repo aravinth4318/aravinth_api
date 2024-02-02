@@ -19,7 +19,7 @@ class _api_bottomnaviState extends State<api_bottomnavi> {
   final tabs = [
     ap_catfact(),
     api_bored1(),
-    public(),
+    // public(),
 
 
 
