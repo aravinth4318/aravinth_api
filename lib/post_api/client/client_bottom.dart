@@ -1,8 +1,9 @@
 import 'package:aravinth_api/get_abi/public/public_1.dart';
 import 'package:flutter/material.dart';
 
-import 'bored/api_bored1.dart';
-import 'catfact/ara_api1.dart';
+import '../category/category_post.dart';
+import '../employee/employee.dart';
+import 'client.dart';
 
 
 class api_bottomnavi extends StatefulWidget {
@@ -17,8 +18,10 @@ class _api_bottomnaviState extends State<api_bottomnavi> {
   int _currentIndex = 0;
 
   final tabs = [
-    ap_catfact(),
-    api_bored1(),
+    client(),
+    employee(),
+    catpost(),
+
 
 
 

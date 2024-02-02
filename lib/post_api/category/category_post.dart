@@ -27,7 +27,8 @@ class _catpostState extends State<catpost> {
   Future<bool>? _success;
   Future<bool> addCat(String category, String desc) async
   {
-    var result = await http.post(Uri.parse("http://catodotest.elevadosoftwares.com/Category/InsertCategory"),
+    var result = await http.post(
+      Uri.parse("http://catodotest.elevadosoftwares.com/Category/InsertCategory"),
         headers: <String, String>{
           'Content-Type': 'application/json; charset=UTF-8',
         },
