@@ -2,7 +2,6 @@ import 'package:aravinth_api/post_api/category/category_post.dart';
 import 'package:aravinth_api/post_api/client/client.dart';
 import 'package:aravinth_api/post_api/employee/employee.dart';
 import 'package:flutter/material.dart';
-
 import 'get_abi/bored/api_bored1.dart';
 import 'get_abi/bored/api_bored2.dart';
 import 'get_abi/bottomnavigation.dart';
@@ -48,7 +47,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: api_bottomnavi (),
+      home: client (),
     );
   }
 }

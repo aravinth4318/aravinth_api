@@ -1,19 +1,19 @@
 import 'package:aravinth_api/get_abi/public/public_1.dart';
 import 'package:flutter/material.dart';
 
-import '../category/category_post.dart';
-import '../employee/employee.dart';
-import 'client.dart';
+import 'category/category_post.dart';
+import 'employee/employee.dart';
+import 'client/client.dart';
 
 
-class api_bottomnavi extends StatefulWidget {
-  const api_bottomnavi({super.key});
+class clientabi extends StatefulWidget {
+  const clientabi({super.key});
 
   @override
-  State<api_bottomnavi> createState() => _api_bottomnaviState();
+  State<clientabi> createState() => _clientabiState();
 }
 
-class _api_bottomnaviState extends State<api_bottomnavi> {
+class _clientabiState extends State<clientabi> {
 
   int _currentIndex = 0;
 

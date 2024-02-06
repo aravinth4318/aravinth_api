@@ -23,14 +23,18 @@ class _employeeState extends State<employee> {
   final TextEditingController paswd = TextEditingController();
   final TextEditingController conpass = TextEditingController();
 
+
+  ///this code for uri details
+
   Future<bool>? _success;
-  Future<bool> empdetails( 
+  Future<bool> empdetails(
       String id, 
       String empname, 
       String mob, 
       String user, 
       String paswd,
-      String conpass ) async {
+      String conpass
+      ) async {
     var result = await http.post(
         Uri.parse("http://catodotest.elevadosoftwares.com/Employee/InsertEmployee"),
             headers:  <String, String> {

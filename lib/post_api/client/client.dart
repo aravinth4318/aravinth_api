@@ -84,7 +84,7 @@ class _clientState extends State<client> {
   SingleChildScrollView buildColumn(){
     return SingleChildScrollView(
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Padding(
             padding: const EdgeInsets.all(8.0),
